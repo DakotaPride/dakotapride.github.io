@@ -5,7 +5,7 @@ body {
     letter-spacing: 2px;
 }
 
-body > *:not(header) {
+body>*:not(header) {
     padding-left: 1em;
 }
 
@@ -17,6 +17,7 @@ h1 {
     text-decoration: underline;
     margin-bottom: 4px;
     margin-top: 4px;
+    text-underline-offset: 4px;
 }
 
 .help p {
@@ -38,9 +39,11 @@ h1 {
     flex-wrap: wrap;
 }
 
-.img-sect img {
-    margin-top: 4px;
-    margin-bottom: 4px;
+.img-sect-item {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 400px;
+    height: auto;
 }
 
 .bar {
@@ -181,4 +184,20 @@ h1 {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.assisted-list {
+    list-style: none;
+    font-style: italic;
+    margin-left: -24px;
+}
+
+.assisted-list li::before {
+    content: "- ";
+}
+
+.assistance-note {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: -12px;
 }
