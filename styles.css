@@ -1,8 +1,39 @@
+footer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(38, 41, 56);
+    border: 3px solid rgb(56, 64, 84);
+    margin-top: 128px;
+    bottom: 8px;
+    position: relative;
+    clear: both;
+}
+
+.footer-links {
+    flex-shrink: 0;
+    line-height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-links a {
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+blockquote {
+    font-style: italic;
+}
+
 body {
     background-color: rgb(12, 13, 18);
     color: rgb(241, 243, 217);
     font-family: "Cabin", sans-serif;
     letter-spacing: 2px;
+    height: 100%;
 }
 
 body>*:not(header) {
@@ -20,13 +51,30 @@ h1 {
     text-underline-offset: 4px;
 }
 
+.lorem-text::before {
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi magna, auctor at nibh non, rutrum consecteturenim. Aliquam dictum quis diam at cursus. Curabitur neque massa, tempor vel sapien dictum, fermentum luctus dui. Quisque sit amet condimentum diam. Nullam eget tempor magna. Fusce ultricies orci vel urna mollis, sit amet venenatis augue laoreet. Integer ac tempor augue. Interdum et malesuada fames ac ante ipsum primis in faucibus.";
+}
+
+.lorem-text-0::before {
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi magna, auctor at nibh non, rutrum consecteturenim. Aliquam dictum quis diam at cursus. Curabitur neque massa, tempor vel sapien dictum, fermentum luctus dui.";
+}
+
 .help p {
     width: 45%;
     line-height: 24px;
 }
 
-.help h1::before {
+.back-button {
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.help h1:not(.back-button)::before {
     content: "HELP > ";
+}
+
+.help h3 {
+    font-style: italic;
 }
 
 .img-sect {
@@ -37,18 +85,50 @@ h1 {
     align-items: center;
     margin-right: 160px;
     flex-wrap: wrap;
+    margin-bottom: 24px;
 }
 
 .img-sect img {
     margin-top: 24px;
     margin-bottom: 24px;
-    width: 400px;
+    width: 450px;
     height: auto;
+    object-fit: contain;
+}
+
+.img-sect .content-descriptor {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 400px;
+    border: 3px solid rgb(56, 64, 84);
+    background-color: rgb(38, 41, 56);
+}
+
+.content-descriptor p {
+    text-align: center;
+    width: 300px;
+    margin-top: 0px;
+}
+
+.content-descriptor h4 {
+    margin-top: -6px;
+    margin-bottom: 8px;
+}
+
+.content-information {
+    text-align: center;
+}
+
+#obtaining {
+    margin-left: 20px;
 }
 
 .bar {
     width: 100%;
     height: 36px;
+    border: 3px solid rgb(56, 64, 84);
     background-color: rgb(38, 41, 56);
 }
 
