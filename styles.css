@@ -1,10 +1,33 @@
+.references {
+    background-color: rgb(38, 41, 56);
+    border: 3px solid rgb(56, 64, 84);
+    margin-top: 128px;
+    position: relative;
+    clear: both;
+}
+
+sup a {
+    text-decoration: none;
+    font-style: italic;
+}
+
+sup::before {
+    content: "[";
+    font-style: italic;
+}
+
+sup::after {
+    content: "]";
+    font-style: italic;
+}
+
 footer {
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: rgb(38, 41, 56);
     border: 3px solid rgb(56, 64, 84);
-    margin-top: 128px;
+    margin-top: 32px;
     bottom: 8px;
     position: relative;
     clear: both;
@@ -88,6 +111,12 @@ h1 {
     margin-bottom: 24px;
 }
 
+.img-sect .figure p {
+    margin-top: -24px;
+    font-style: italic;
+    width: 450px;
+}
+
 .img-sect img {
     margin-top: 24px;
     margin-bottom: 24px;
@@ -104,6 +133,10 @@ h1 {
     width: 400px;
     border: 3px solid rgb(56, 64, 84);
     background-color: rgb(38, 41, 56);
+}
+
+.content-descriptor img {
+    width: 300px;
 }
 
 .content-descriptor p {
@@ -270,6 +303,10 @@ h1 {
     list-style: none;
     font-style: italic;
     margin-left: -24px;
+}
+
+.assisted-list li {
+    margin-bottom: 10px;
 }
 
 .assisted-list li::before {
