@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create: Garnished - April Foods '26</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin">
+</head>
+
+<body style="display: flex;flex-direction: column;">
+    <header>
+        <h1>April Foods '26</h1>
+        <div class="bar" style="display: flex;">
+            <div class="bar-items">
+                <a href="../index.html" class="bar-item">INDEX</a>
+                <a href="../gallery.html" class="bar-item">GALLERY</a>
+                <div class="dropdown bar-item">MOD ASSISTANCE
+                    <div class="dropdown-content">
+                        <a href="../help/carl.html">Carl Mod</a>
+                        <a href="../help/create-framed.html">Create: Framed</a>
+                        <a href="../help/create_garnished.html">Create: Garnished</a>
+                        <a href="../help/create_garnished_reworked.html">Create: Garnished Reworked</a>
+                        <a href="../help/create_genderless.html">Create: Genderless</a>
+                        <a href="../help/create-mechanical-botany.html">Create: Mechanical Botany</a>
+                        <a href="../help/critters_delight.html">Critters Delight</a>
+                        <a href="../help/desolatum.html">Desolatum</a>
+                        <a href="../help/happy_pride_moth.html">Happy Pride Moth!</a>
+                        <a href="../help/hibernal_herbs.html">Hibernal Herbs</a>
+                    </div>
+                </div>
+                <div class="active dropdown bar-item">April Fools
+                    <div class="dropdown-content">
+                        <a href="../blogs/create-garnished-april-foods.html">Create: Garnished</a>
+                        <a href="../blogs/create-garnished-reworked-april-foods.html">Create: Garnished Reworked</a>
+                        <a href="../blogs/carl-mod-april-fools.html">Carl Mod</a>
+                    </div>
+                </div>
+            </div>
+            <a href="../help/template.html" class="bar-item"
+                style="float: right;width: 180px;display: flex;align-items: center;"
+                title="A general template for Mod Assistance pages">GUIDE TEMPLATE</a>
+        </div>
+    </header>
+    <div class="help">
+        <div class="img-sect">
+            <img src="../images/garnished/april-foods/orestone.png" class="sect-item">
+            <img src="../images/garnished/april-foods/templates.png" class="sect-item">
+            <img src="../images/garnished/april-foods/aversion_git_gud.png" class="sect-item">
+            <img src="../images/garnished/april-foods/no_salt.png" class="sect-item">
+            <img src="../images/garnished/april-foods/end_cheese.png" class="sect-item">
+            <video controls class="sect-item">
+                <source src="../videos/hatchet_bonk.mp4" type="video/mp4">
+            </video>
+            <img src="../images/garnished/april-foods/jelly_bounce.png" class="sect-item">
+            <img src="../images/garnished/april-foods/wyvern_stone.png" class="sect-item">
+            <img src="../images/garnished/april-foods/evil_peanut_oil.png" class="sect-item">
+            <img src="../images/garnished/april-foods/mummification.png" class="sect-item">
+            <img src="../images/garnished/april-foods/smooth.png" class="sect-item">
+        </div>
+        <h2>Happy April Foods 2026!</h2>
+        <p>For the first time, Create: Garnished and a couple of other projects have received an update dedicated to joke content. For everyone who played around with these joke versions, hope you had fun discovering the weird and quirky features added or adjusted for the update!</p>
+        <p>Here is a culmination of all of the stuff from Create: Garnished's April Foods '26 update!</p>
+        <h2>Create Orestone Generation</h2>
+        <p>Some of you might remember back before the overhaul to Liquefied Mastic Resin that you could automate Crimsite, Viridium, Ochrum, and Asurine utilising the matching liquid that corresponded to the colour of the stone. Of course, as many of us have become familiar with, this is no longer the case and was replaced with fluid interactions producing Zultanite stone variants.</p>
+        <p>Well, now the legacy generation has returned in it's own way, where sources of Liquefied Mastic Resin of the correct colours - Red, green, yellow, and blue - can be turned into their respective stone blocks.</p>
+        <h2>Garnishment Templates</h2>
+        <p>A very small minority of you may even remember Garnishment Templates - yes, back when I didn't understand how worldgen worked all that well. (damn, yeah that was a really long time) Well, while you can still find the Nut Trees, you can now create Garnishment Templates from sending an Iron Sheet through a Stonecutter or a Mechanical Saw. Deploying any kind of nut from Create: Garnished will produce a unique variation of this item that can then be deployed onto Dough to produce the ungarnished nut corresponding to the Garnishment Template utilised in the process.</p>
+        <h2>Aversion Adjustments</h2>
+        <p>As you'll likely have noticed in your playthrough of this update, eating anything nut related will now give you the Aversion status effect. While the status effect is not new in this update, it did receive major alterations, which I'll go over in a second. But for now, you may notice some messages appearing before you after consuming some of these foods, a full list of which can be found below.</p>
+        <ul class="assisted-list">
+            <li>You may want to double-check your recipe book...</li>
+            <li>Pretty self-explanatory, honestly...</li>
+            <li>It's in there, trust bro...</li>
+            <li>Read the name again...</li>
+            <li>That assembly required some nuts, if you recall...</li>
+            <li>Really just blended those nuts together, eh?</li>
+            <li>Chug! Chug! Ch- oh, wait, that had nuts...</li>
+            <li>Strong enough to kill a minor deity, not so much to eat nuts...</li>
+            <li>Straight bonking nuts... into your food...</li>
+            <li>Deez nuts</li>
+            <li style="color: red;">Deez nuts</li>
+            <li>You have a nut allergy, dork, don't eat that!</li>
+        </ul>
+        <p>I'm not going to list every food that can get one of these messages, but there is <i>some</i> logic applied to what message you get depending on the food that you consume.</p>
+        <p>The Aversion status effect itself - as mentioned before - has gotten overhauled specifically for this update. It now functions similar to the vanilla status effect - Poison - and damages entities repeatedly. However, this is done in a much more annoying fashion where each tick of damage has thorns knockback and the damage is dealt much faster. Perishing from this type of damage also has unique death messages, but I think are fair enough to mention here.</p>
+        <ul class="assisted-list">
+            <li>&lt;DAMAGE RECEIVER&gt; gobbled down too many nuts</li>
+            <li>&lt;DAMAGE RECEIVER&gt; told too many deez nuts jokes to &lt;DAMAGE APPLICATOR&gt;</li>
+        </ul>
+        <h2>Salt is no more more</h2>
+        <p>Who needs seasoning anyways? Pretty self-explanatory thing here, Salt has been removed from the mod and recipes requiring salt have been adjusted accordingly.</p>
+        <h2>Almend Cheese</h2>
+        <p>The moon is officially made out of cheese! Or, I guess more accurately, cheese is now made out of the moon! This is pretty much just an aesthetic change rather than proper functionality, but nonetheless, enjoy the pun. :3</p>
+        <h2>Hatchet Adjustments</h2>
+        <p>Taking a page out of Create: Garnished Reworked's configurations, all kinds of hatchets will now knock entities a significant amount of blocks away from it's initial position. Upon attacking an entity, a loud metal sound will play - an anvil.</p>
+        <p>As it would appear, the house always wins and defeating entities while Ravaging or Salvaging is applied to your hatchet will result in additional guaranteed to the player as opposed to having to deal with chances and enchantment level.</p>
+        <h2>Block Effects</h2>
+        <h3>Ethereal Compound Block</h3>
+        <p>Blocks made from Ethereal Compound will now provide the Yeeted- I mean, uhh... "Ethereality" status effect, which will make you jump over 1000 blocks into the air as opposed to just a regular jump. A little popup message will appear right above your hotbar warning you that you should remain planted on the ground, but let's be honest - you're either going to ignore said warning or are going to forget and inevitably jump regardless.</p>
+        <h3>Wyvern Stone</h3>
+        <p>Typically when standing atop Wyvern Stone, you will slowly gain various positive status effects with 10 available effects that you can have at any given time. However, this update changes that to where you get all 10 effects applied simultaneously - have fun.</p>
+        <h2>Evil Peanut Oil</h2>
+        <p>As suggested - as a joke - by <a href="https://artslop.carrd.co">Fordalels</a> for Create: Garnished Reworked's halloween-themed update, (Evil) Peanut Oil- Wait, <i>ahem</i>, "evil peanut butter (its peanut butter but evil)"...</p>
+        <p>Well, for the purposes of the pre-rework version of the mod, it's oil! Any food/drink made utilising (Evil) Peanut Oil - Bottled (Evil) Peanut Oil, (Evil) Peanut Oil And Cinder Sandwich, etc. - will now provide the Vulnerability status effect upon consumption. Vulnerability halves your max health and greatly reduces your knockback resistance from all damage sources.</p>
+        <h2>Mummification</h2>
+        <p>Sorry, looks like those items <i>might</i> have been a bit cursed and now you're suffering the consequences from the pharaoh themselves. If you hold Amber Remnant or Ritualistic Stone within your inventory, Mummification V will be applied which will greatly slow you down and pretty much make any damage you could deal null and void.</p>
+        <h2>Smooth Blocks</h2>
+        <p>It's sometimes just that simple - retexture every smooth stone block from Create: Garnished to just be a singular colour, the smoothest that it can possibly be.</p>
+    </div>
+
+    <script src="javascript.js"></script>
+    <footer>
+        <p>This website is developed by DakotaPrideModding and core projects listed on this website (such as under the Mod Assistance dropdown list) are affiliated with them.</p>
+        <div class="footer-links">
+            <a href="https://bsky.app/profile/xdemonbardx.bsky.social" target="_blank">Bluesky</a>
+            <a href="https://www.curseforge.com/members/dakotapridemodding/projects" target="_blank">CurseForge</a>
+            <a href="https://modrinth.com/user/DakotaPrideModding" target="_blank">Modrinth</a>
+            <a href="https://github.com/DakotaPride" target="_blank">Github</a>
+            <a href="https://discord.com/invite/8NkWwu9hgN" target="_blank">Discord</a>
+        </div>
+    </footer>
+</body>
+
+</html>

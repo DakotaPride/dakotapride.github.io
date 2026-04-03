@@ -57,6 +57,7 @@ body {
     font-family: "Cabin", sans-serif;
     letter-spacing: 2px;
     height: 100%;
+    min-height: 800px;
 }
 
 body>*:not(header) {
@@ -100,6 +101,11 @@ h1 {
     font-style: italic;
 }
 
+video {
+    width: 540px;
+    margin: 12px;
+}
+
 .img-sect {
     display: flex;
     float: right;
@@ -111,6 +117,11 @@ h1 {
     margin-bottom: 24px;
 }
 
+.sect-item {
+    border: 4px solid rgb(56, 64, 84);
+    border-radius: 4px;
+}
+
 .img-sect .figure p {
     margin-top: -24px;
     font-style: italic;
@@ -118,6 +129,14 @@ h1 {
 }
 
 .img-sect img {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 450px;
+    height: auto;
+    object-fit: contain;
+}
+
+.img-sect video {
     margin-top: 24px;
     margin-bottom: 24px;
     width: 450px;
@@ -155,6 +174,10 @@ h1 {
 }
 
 #obtaining {
+    margin-left: 20px;
+}
+
+#config {
     margin-left: 20px;
 }
 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CONFIGURATION GUIDE</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin">
+</head>
+
+<body>
+    <header class="help">
+        <div style="display: flex;flex-wrap: nowrap;">
+            <h1>CONFIGURATION</h1>
+        </div>
+        <div class="bar" style="display: flex;">
+            <div class="bar-items">
+                <a href="../index.html" class="bar-item">INDEX</a>
+                <a href="../gallery.html" class="bar-item">GALLERY</a>
+                <div class="dropdown bar-item">MOD ASSISTANCE
+                    <div class="dropdown-content">
+                        <a href="../help/carl.html">Carl Mod</a>
+                        <a href="../help/create-framed.html">Create: Framed</a>
+                        <a href="../help/create_garnished.html">Create: Garnished</a>
+                        <a href="../help/create_garnished_reworked.html">Create: Garnished Reworked</a>
+                        <a href="../help/create_genderless.html">Create: Genderless</a>
+                        <a href="../help/create-mechanical-botany.html">Create: Mechanical Botany</a>
+                        <a href="../help/critters_delight.html">Critters Delight</a>
+                        <a href="../help/desolatum.html">Desolatum</a>
+                        <a href="../help/happy_pride_moth.html">Happy Pride Moth!</a>
+                        <a href="../help/hibernal_herbs.html">Hibernal Herbs</a>
+                    </div>
+                </div>
+                <div class="dropdown bar-item">April Fools
+                    <div class="dropdown-content">
+                        <a href="../blogs/create-garnished-april-foods.html">Create: Garnished</a>
+                        <a href="../blogs/create-garnished-reworked-april-foods.html">Create: Garnished Reworked</a>
+                        <a href="../blogs/carl-mod-april-fools.html">Carl Mod</a>
+                    </div>
+                </div>
+            </div>
+            <p class="bar-item" style="float: right;width: 180px;display: flex;align-items: center;"
+                title="A general template for Mod Assistance pages">GUIDE TEMPLATE</p>
+        </div>
+    </header>
+    <div class="help">
+        <div id="basics">
+            <h2>Basics</h2>
+            <p>While configs can be a bit complicated at times, for the purposes of my mods, configs are split into 3 categories - CLIENT, COMMON, and SERVER. Each of these act differently than the others and serve their own unique purpose, being utilised in different aspects of Minecraft's code and, by proxy, my mods. Technically speaking there's also STARTUP, but I'm not going to be covering that here as I don't believe I use STARTUP configs anywhere, though this may change in the future.<sup><a href="#reference#i">I</a></sup></p>
+            <p>As a general rule of thumb for this page, whenever I need to refer to something outside of my knowledge, it'll be from the Neoforged Documentation on the subject unless I find it necessary to utilise another source.</p>
+        </div>
+        <div id="client">
+            <h2>Client Configurations</h2>
+            <p>These types of configuration options can be configured by the player no matter if they are a server admin or not, controlling stuff on the client-side of things.</p>
+            <p>This can include, for example, whether or not emitted particles are visible to you or the density of fog/vision obscurity while within fluids. A mod that utilises the latter function is the Create mod through the Fluid Fog Settings, which determines how far in front of the player can be seen.</p>
+        </div>
+        <div id="common">
+            <h2>Common Configurations</h2>
+            <p>These types of configuration options can be configured by both the player and server owners/moderators. The main caveat of common configuration options is that in order to join a server, the client's value for the option must match the server's value for the option. If these values are different, the player cannot join the server.</p>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+    
+    <div class="references">
+        <h3>Text References</h3>
+        <p id="reference#i">I. Configuration | Neoforged Docs | <a href="https://docs.neoforged.net/docs/1.21.1/misc/config/#configuration-types" target="_blank">Source</a> | Author of Original Source</p>
+        <h3>Other References</h3>
+        <p id="reference#source-code">Source Code. Mod Page | <a href="https://github.com/DakotaPride/" target="_blank">Source</a> | DakotaPrideModding</p>
+        <p id="reference#modrinth">Modrinth. Mod Page | <a href="https://modrinth.com/mod/" target="_blank">Source</a> | DakotaPrideModding</p>
+        <p id="reference#curseforge">CurseForge. Mod Page | <a href="https://www.curseforge.com/minecraft/mc-mods/" target="_blank">Source</a> | DakotaPrideModding</p>
+    </div>
+
+    <footer>
+        <p>This website is developed by DakotaPrideModding and core projects listed on this website (such as under the Mod Assistance dropdown list) are affiliated with them.</p>
+        <div class="footer-links">
+            <a href="https://bsky.app/profile/xdemonbardx.bsky.social" target="_blank">Bluesky</a>
+            <a href="https://www.curseforge.com/members/dakotapridemodding/projects" target="_blank">CurseForge</a>
+            <a href="https://modrinth.com/user/DakotaPrideModding" target="_blank">Modrinth</a>
+            <a href="https://github.com/DakotaPride" target="_blank">Github</a>
+            <a href="https://discord.com/invite/8NkWwu9hgN" target="_blank">Discord</a>
+        </div>
+    </footer>
+</body>
+
+</html>
