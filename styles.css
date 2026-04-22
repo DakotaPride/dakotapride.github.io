@@ -227,8 +227,10 @@ video {
 }
 
 .skin-gallery-item {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin: 2px;
+    background-color: rgb(38, 41, 56);
+    border: 3px solid rgb(56, 64, 84);
+    width: 170px;
 }
 
 .skin-gallery-item img {
@@ -237,6 +239,7 @@ video {
 
 .skin-gallery-item p {
     margin-top: 0px;
+    margin-left: 4px;
     width: 160px;
     font-style: italic;
     font-size: 12px;
