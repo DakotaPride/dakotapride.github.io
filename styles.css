@@ -226,6 +226,23 @@ video {
     flex-wrap: wrap;
 }
 
+.skin-gallery-item {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.skin-gallery-item img {
+    height: 240px;
+    padding: 16px;
+}
+
+.skin-gallery-item p {
+    margin-top: 0px;
+    width: 160px;
+    font-style: italic;
+    font-size: 12px;
+}
+
 .gallery-item {
     /*border: 2px solid rgb(111, 111, 152);*/
     width: 200px;
