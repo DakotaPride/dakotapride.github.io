@@ -58,6 +58,7 @@ body {
     letter-spacing: 2px;
     height: 100%;
     min-height: 800px;
+    text-underline-offset: 4px;
 }
 
 body>*:not(header) {
@@ -72,7 +73,6 @@ h1 {
     text-decoration: underline;
     margin-bottom: 4px;
     margin-top: 4px;
-    text-underline-offset: 4px;
 }
 
 .lorem-text::before {
@@ -226,23 +226,45 @@ video {
     flex-wrap: wrap;
 }
 
-.skin-gallery-item {
+.alt-gallery-item {
     margin: 2px;
     background-color: rgb(38, 41, 56);
     border: 3px solid rgb(56, 64, 84);
     width: 170px;
 }
 
-.skin-gallery-item img {
+.alt-gallery-item img {
     padding: 16px;
 }
 
-.skin-gallery-item p {
+.alt-gallery-item p {
     margin-top: 0px;
     margin-left: 4px;
     width: 160px;
     font-style: italic;
     font-size: 12px;
+}
+
+.texture-gallery-item {
+    margin: 2px;
+    background-color: rgb(38, 41, 56);
+    border: 3px solid rgb(56, 64, 84);
+}
+
+.texture-gallery-item img {
+    padding: 16px;
+}
+
+.texture-gallery-item p {
+    margin-top: 0px;
+    margin-left: 4px;
+    font-style: italic;
+    font-size: 12px;
+    width: 160px;
+}
+
+.large-contents p {
+    width: 480px;
 }
 
 .gallery-item {
