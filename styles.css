@@ -21,6 +21,13 @@ sup::after {
     font-style: italic;
 }
 
+.machination-temp {
+    margin-top: 32px;
+    bottom: 8px;
+    position: relative;
+    clear: both;
+}
+
 footer {
     justify-content: center;
     align-items: center;
