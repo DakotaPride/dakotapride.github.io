@@ -20,16 +20,16 @@
                 <a href="../../gallery.html" class="bar-item">GALLERY</a>
                 <div class="active dropdown bar-item">MOD ASSISTANCE
                     <div class="dropdown-content">
-                        <a href="../../help/carl.html">Carl Mod</a>
-                        <a href="../../help/create-framed.html">Create: Framed</a>
-                        <a href="../../help/create-garnished.html">Create: Garnished</a>
-                        <a href="../../help/create-garnished_reworked.html">Create: Garnished Reworked</a>
-                        <a href="../../help/create-genderless.html">Create: Genderless</a>
-                        <a href="../../help/create-mechanical-botany.html">Create: Mechanical Botany</a>
-                        <a href="../../help/critters-delight.html">Critters Delight</a>
-                        <a href="../../help/desolatum.html">Desolatum</a>
-                        <a href="../../help/happy-pride-moth.html">Happy Pride Moth!</a>
-                        <a href="../../help/hibernal-herbs.html">Hibernal Herbs</a>
+                        <a href="../carl.html">Carl Mod</a>
+                        <a href="../create-framed.html">Create: Framed</a>
+                        <a href="../create-garnished.html">Create: Garnished</a>
+                        <a href="../create-garnished_reworked.html">Create: Garnished Reworked</a>
+                        <a href="../create-genderless.html">Create: Genderless</a>
+                        <a href="../create-mechanical-botany.html">Create: Mechanical Botany</a>
+                        <a href="../critters-delight.html">Critters Delight</a>
+                        <a href="../desolatum.html">Desolatum</a>
+                        <a href="../happy-pride-moth.html">Happy Pride Moth!</a>
+                        <a href="../hibernal-herbs.html">Hibernal Herbs</a>
                     </div>
                 </div>
                 <div class="dropdown bar-item">APRIL FOOLS
@@ -43,13 +43,72 @@
             <a href="../../portfolio.html" class="bar-item"
                 style="float: right;width: 120px;display: flex;align-items: center;"
                 title="The portfolio page for DakotaPrideModding">PORTFOLIO</a>
-            <a href="help/template.html" class="bar-item"
+            <a href="../template.html" class="bar-item"
                 style="float: right;width: 200px;display: flex;align-items: center;"
                 title="A general template for Mod Assistance pages">GUIDE TEMPLATE</a>
         </div>
     </header>
     <div class="help">
         <div class="img-sect">
+            <div id="table-of-contents">
+                <div class="content">
+                    <h3>TABLE OF CONTENTS</h3>
+                    <ul>
+                        <li>
+                            <span>1</span>
+                            <span class="id"><a href="#content">CONTENT</a></span>
+                            <ul>
+                                <li>
+                                    <span>1.1</span>
+                                    <span class="id"><a href="#obtaining">OBTAINING</a></span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>2</span>
+                            <span class="id"><a href="#functionality">FUNCTIONALITY</a></span>
+                            <ul>
+                                <li>
+                                    <span>2.1</span>
+                                    <span class="id"><a href="#item-block-interactions">ITEM AND BLOCK INTERACTIONS</a></span>
+                                </li>
+                                <li>
+                                    <span>2.2</span>
+                                    <span class="id"><a href="#config">CONFIGURATION</a></span>
+                                </li>
+                                <ul>
+                                    <li>
+                                        <span>2.2.1</span>
+                                        <span class="id"><a href="#server-config">SERVER</a></span>
+                                    </li>
+                                    <li>
+                                        <span>2.2.2</span>
+                                        <span class="id"><a href="#client-config">CLIENT</a></span>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>3</span>
+                            <span class="id"><a href="#compatibility">COMPATIBILITY</a></span>
+                            <ul>
+                                <li>
+                                    <span>3.1</span>
+                                    <span class="id"><a href="#non-content-compat">NON-CONTENT</a></span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <span class="id"><a href="#history">BRIEF HISTORY</a></span>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <span class="id"><a href="#references">REFERENCES</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="content-descriptor">
                 <img src="../../images/mechanical_botany/mechanical_insolator.png" alt="Mechanical Insolator">
                 <div class="content-information">
@@ -105,12 +164,13 @@
         </div>
         <div id="functionality">
             <h2>Functionality</h2>
+            <h3 id="item-block-interactions">Item & Block Interactions</h3>
             <p>The Mechanical Insolator allows the automation of various crops, plants, and vegetation within a semi-singular block space, with the addition of other necessary blocks for the machine to run.</p>
             <p>First, you need to power it through a cog or cog-adjacent source on one of the cardinal directions. Well, that, or use a large cogwheel and power it from a diagonal. The next step is to provide it with, most of the time, copious amounts of certain liquids. You can only input this fluid through the bottom of the block, so ensure that you take that into account in any automatory designs. This liquid varies depending on the plant being automated through the block, but most crops, flowers, etc. will require Water.<sup><a href="#reference#figure-iii">Figure III</a></sup></p>
             <p>The final step to actually reproduce the plant is by placing it into the block either by dropping it onto the top of the block or inserting the item through a funnel on any side, the top, or the bottom. Though, strictly speaking, the bottom will be taken up by a pipe network in order to get the fluid into the Mechanical Insolator.</p>
             <div id="config">
                 <h3>Configuration</h3>
-                <h4>Server</h4>
+                <h4 id="server-config">Server</h4>
                 <h5>Kinetic Stress Impact | Default: 64 | Range: > 2</h5>
                 <p>Determines the kinetic stress impact value of the machine. What this value means is that if you are running your machines at 256 RPM and this value is equal to 2, then it will consume 512 stress units.</p>
                 <h5>Processing Time Multiplier | Default: 1 | Range: > 1</h5>
@@ -124,13 +184,14 @@
                 <p>Within each processing recipe json file for the Mechanical Insolator - or, more specifically, with the 'mechanical_botany:insolating' recipe type - is a flag called "consume_input", which determines whether or not the input slot of the Mechanical Insolator decrements from the itemstack or remains as is. Most recipes have this set to 'false', but some, more late-game or important recipes have this set to true, such as Wither Roses.</p>
                 <p>If you're familiar with the Thermal Series' Cyclical Processing Upgrade for the Phytogenic Insolator, they may seem pretty similar. This config option, however, only impacts certain plants' processing recipes - such as Wither Roses, for example.<sup><a href="#reference#i">I</a></sup></p>
                 <p>It's important to note that the recipes, if viewed through JEI or EMI, may be inaccurate depending on what this configuration value is set to when it comes to the output count of certain items.</p>
-                <h4>Client</h4>
+                <h4 id="client-config">Client</h4>
                 <h5>Slot Recognition | Default: true</h5>
                 <p>Acts as an accessibility option for players wanting to more easily distinguish between the input item slots and output item slots when looking at a Mechanical Insolator with contents inside. This shows up within the goggle hover text next to the item stack name and count.</p>
             </div>
         </div>
         <div id="compatibility">
             <h2>Compatibility</h2>
+            <h3 id="non-content-compat">Non-Content Compatibility</h3>
             <p>The Mechanical Insolator has built-in support for various mods, including but may not be limited to:</p>
             <ul class="assisted-list">
                 <li>Ars Elemental</li>
@@ -160,7 +221,7 @@
 
     <script src="javascript.js"></script>
     
-    <div class="references">
+    <div class="references" id="references">
         <h3>Text References</h3>
         <p id="#reference#i">I. Thermal Expansion | <a href="https://www.curseforge.com/minecraft/mc-mods/thermal-expansion" target="_blank">Source</a> | TeamCOFH</p>
         <h3>Image References</h3>

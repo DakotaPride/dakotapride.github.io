@@ -6,6 +6,51 @@
     clear: both;
 }
 
+.img-box img {
+    transition: scale 0.15s;
+}
+
+.img-box img:hover {
+    scale: 110%;
+    cursor: pointer;
+}
+
+#table-of-contents {
+    margin: 12px;
+    border: 3px solid rgb(56, 64, 84);
+    background-color: rgb(38, 41, 56);
+    width: 400px;
+}
+
+#table-of-contents ul {
+    list-style: none;
+}
+
+#table-of-contents ul li {
+    margin-left: -12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#table-of-contents h3 {
+    margin-bottom: -8px;
+}
+
+#table-of-contents .content {
+    margin-left: 8px;
+    margin-top: -8px;
+}
+
+#table-of-contents .id a {
+    color: rgb(223, 211, 151);
+    text-decoration: none;
+}
+
+#table-of-contents .id a:hover {
+    color: rgb(223, 211, 151);
+    text-decoration: underline;
+}
+
 sup a {
     text-decoration: none;
     font-style: italic;
@@ -19,13 +64,6 @@ sup::before {
 sup::after {
     content: "]";
     font-style: italic;
-}
-
-.machination-temp {
-    margin-top: 32px;
-    bottom: 8px;
-    position: relative;
-    clear: both;
 }
 
 footer {
@@ -225,6 +263,7 @@ video {
 
 .mod-tab summary {
     user-select: none;
+    cursor: pointer;
     width: 80px;
 }
 
@@ -277,7 +316,7 @@ video {
 .gallery-item {
     /*border: 2px solid rgb(111, 111, 152);*/
     width: 200px;
-    padding: 4px;
+    padding: 12px;
 }
 
 .gallery-item .img-box {
@@ -296,7 +335,7 @@ video {
 }
 
 .gallery-item p {
-    margin: 4px;
+    margin: 8px;
     width: 100%;
 }
 

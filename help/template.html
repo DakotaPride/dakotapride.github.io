@@ -38,17 +38,109 @@
                         <a href="../blogs/create-garnished-reworked-april-foods.html">Create: Garnished Reworked</a>
                     </div>
                 </div>
+                <a href="https://www.curseforge.com/members/dakotapridemodding/projects" class="bar-item"
+                    target="_blank">CURSEFORGE PAGE</a>
+                <a href="https://modrinth.com/user/DakotaPrideModding" class="bar-item" target="_blank">MODRINTH
+                    PAGE</a>
             </div>
             <a href="../portfolio.html" class="bar-item"
                 style="float: right;width: 120px;display: flex;align-items: center;"
                 title="The portfolio page for DakotaPrideModding">PORTFOLIO</a>
-            <p class="active bar-item"
-                style="float: right;width: 200px;display: flex;align-items: center;"
+            <p class="active bar-item" style="float: right;width: 200px;display: flex;align-items: center;"
                 title="A general template for Mod Assistance pages">GUIDE TEMPLATE</p>
         </div>
     </header>
     <div class="help">
         <div class="img-sect">
+            <div id="table-of-contents">
+                <div class="content">
+                    <h3>TABLE OF CONTENTS</h3>
+                    <ul>
+                        <li>
+                            <span>1</span>
+                            <span class="id"><a href="#content">CONTENT</a></span>
+                            <ul>
+                                <li>
+                                    <span>1.1</span>
+                                    <span class="id"><a href="#obtaining">OBTAINING</a></span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>2</span>
+                            <span class="id"><a href="#functionality">FUNCTIONALITY</a></span>
+                            <ul>
+                                <li>
+                                    <span>2.1</span>
+                                    <span class="id"><a href="#mob-interactions">MOB INTERACTIONS</a></span>
+                                </li>
+                                <li>
+                                    <span>2.2</span>
+                                    <span class="id"><a href="#item-block-interactions">ITEM AND BLOCK INTERACTIONS</a></span>
+                                </li>
+                                <li>
+                                    <span>2.3</span>
+                                    <span class="id"><a href="#config">CONFIGURATION</a></span>
+                                </li>
+                                <ul>
+                                    <li>
+                                        <span>2.3.1</span>
+                                        <span class="id"><a href="#server-config">SERVER</a></span>
+                                    </li>
+                                    <li>
+                                        <span>2.3.2</span>
+                                        <span class="id"><a href="#client-config">CLIENT</a></span>
+                                    </li>
+                                    <li>
+                                        <span>2.3.3</span>
+                                        <span class="id"><a href="#common-config">COMMON</a></span>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>3</span>
+                            <span class="id"><a href="#compatibility">COMPATIBILITY</a></span>
+                            <ul>
+                                <li>
+                                    <span>3.1</span>
+                                    <span class="id"><a href="#added-content-compat">CONTENT</a></span>
+                                </li>
+                                <li>
+                                    <span>3.2</span>
+                                    <span class="id"><a href="#non-content-compat">NON-CONTENT</a></span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <span class="id"><a href="#easter-eggs">EASTER EGGS</a></span>
+                            <ul>
+                                <li>
+                                    <span>4.1</span>
+                                    <span class="id"><a href="#misc-gallery">MISC GALLERY</a></span>
+                                </li>
+                                <li>
+                                    <span>4.2</span>
+                                    <span class="id"><a href="#package-gallery">PACKAGE GALLERY</a></span>
+                                </li>
+                                <li>
+                                    <span>4.3</span>
+                                    <span class="id"><a href="#reskin-gallery">RESKIN GALLERY</a></span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <span class="id"><a href="#history">BRIEF HISTORY</a></span>
+                        </li>
+                        <li>
+                            <span>6</span>
+                            <span class="id"><a href="#references">REFERENCES</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="content-descriptor">
                 <img src="../../images/mechanical_botany/mechanical_insolator.png"
                     alt="Example Block Screenshot From True Isometric Right Angle">
@@ -120,9 +212,10 @@
     </div>
 
     <script src="javascript.js"></script>
-    
-    <div class="references">
-        <p>If referencing a video, link to timestamp 5 seconds prior to quote or event & remove the tracker part of the URL if coming from YouTube</p>
+
+    <div class="references" id="references">
+        <p>If referencing a video, link to timestamp 5 seconds prior to quote or event & remove the tracker part of the
+            URL if coming from YouTube</p>
         <h3>Text References</h3>
         <p id="reference#i">I. Name of Source | Link to Original Source | Author of Original Source</p>
         <p id="reference#ii">II. Name of Source | Link to Original Source | Author of Original Source</p>
@@ -138,16 +231,21 @@
         <h3>Image References</h3>
         <p id="reference#figure-i">Figure I. Name of Source | Link to Original Source | Author of Original Source</p>
         <p id="reference#figure-ii">Figure II. Name of Source | Link to Original Source | Author of Original Source</p>
-        <p id="reference#figure-iii">Figure III. Name of Source | Link to Original Source | Author of Original Source</p>
+        <p id="reference#figure-iii">Figure III. Name of Source | Link to Original Source | Author of Original Source
+        </p>
         <p id="reference#figure-iv">Figure IV. Name of Source | Link to Original Source | Author of Original Source</p>
         <h3>Other References</h3>
-        <p id="reference#source-code">Source Code. Mod Page | <a href="https://github.com/DakotaPride/" target="_blank">Source</a> | DakotaPrideModding</p>
-        <p id="reference#modrinth">Modrinth. Mod Page | <a href="https://modrinth.com/mod/" target="_blank">Source</a> | DakotaPrideModding</p>
-        <p id="reference#curseforge">CurseForge. Mod Page | <a href="https://www.curseforge.com/minecraft/mc-mods/" target="_blank">Source</a> | DakotaPrideModding</p>
+        <p id="reference#source-code">Source Code. Mod Page | <a href="https://github.com/DakotaPride/"
+                target="_blank">Source</a> | DakotaPrideModding</p>
+        <p id="reference#modrinth">Modrinth. Mod Page | <a href="https://modrinth.com/mod/" target="_blank">Source</a> |
+            DakotaPrideModding</p>
+        <p id="reference#curseforge">CurseForge. Mod Page | <a href="https://www.curseforge.com/minecraft/mc-mods/"
+                target="_blank">Source</a> | DakotaPrideModding</p>
     </div>
 
     <footer>
-        <p>This website is developed by DakotaPrideModding and core projects listed on this website (such as under the Mod Assistance dropdown list) are affiliated with them.</p>
+        <p>This website is developed by DakotaPrideModding and core projects listed on this website (such as under the
+            Mod Assistance dropdown list) are affiliated with them.</p>
         <div class="footer-links">
             <a href="https://bsky.app/profile/xdemonbardx.bsky.social" target="_blank">Bluesky</a>
             <a href="https://www.curseforge.com/members/dakotapridemodding/projects" target="_blank">CurseForge</a>

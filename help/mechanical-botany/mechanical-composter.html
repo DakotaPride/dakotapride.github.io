@@ -20,16 +20,16 @@
                 <a href="../../gallery.html" class="bar-item">GALLERY</a>
                 <div class="active dropdown bar-item">MOD ASSISTANCE
                     <div class="dropdown-content">
-                        <a href="../../help/carl.html">Carl Mod</a>
-                        <a href="../../help/create-framed.html">Create: Framed</a>
-                        <a href="../../help/create-garnished.html">Create: Garnished</a>
-                        <a href="../../help/create-garnished_reworked.html">Create: Garnished Reworked</a>
-                        <a href="../../help/create-genderless.html">Create: Genderless</a>
-                        <a href="../../help/create-mechanical-botany.html">Create: Mechanical Botany</a>
-                        <a href="../../help/critters-delight.html">Critters Delight</a>
-                        <a href="../../help/desolatum.html">Desolatum</a>
-                        <a href="../../help/happy-pride-moth.html">Happy Pride Moth!</a>
-                        <a href="../../help/hibernal-herbs.html">Hibernal Herbs</a>
+                        <a href="../carl.html">Carl Mod</a>
+                        <a href="../create-framed.html">Create: Framed</a>
+                        <a href="../create-garnished.html">Create: Garnished</a>
+                        <a href="../create-garnished_reworked.html">Create: Garnished Reworked</a>
+                        <a href="../create-genderless.html">Create: Genderless</a>
+                        <a href="../create-mechanical-botany.html">Create: Mechanical Botany</a>
+                        <a href="../critters-delight.html">Critters Delight</a>
+                        <a href="../desolatum.html">Desolatum</a>
+                        <a href="../happy-pride-moth.html">Happy Pride Moth!</a>
+                        <a href="../hibernal-herbs.html">Hibernal Herbs</a>
                     </div>
                 </div>
                 <div class="dropdown bar-item">APRIL FOOLS
@@ -43,13 +43,68 @@
             <a href="../../portfolio.html" class="bar-item"
                 style="float: right;width: 120px;display: flex;align-items: center;"
                 title="The portfolio page for DakotaPrideModding">PORTFOLIO</a>
-            <a href="help/template.html" class="bar-item"
+            <a href="../template.html" class="bar-item"
                 style="float: right;width: 200px;display: flex;align-items: center;"
                 title="A general template for Mod Assistance pages">GUIDE TEMPLATE</a>
         </div>
     </header>
     <div class="help">
         <div class="img-sect">
+            <div id="table-of-contents">
+                <div class="content">
+                    <h3>TABLE OF CONTENTS</h3>
+                    <ul>
+                        <li>
+                            <span>1</span>
+                            <span class="id"><a href="#content">CONTENT</a></span>
+                            <ul>
+                                <li>
+                                    <span>1.1</span>
+                                    <span class="id"><a href="#obtaining">OBTAINING</a></span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>2</span>
+                            <span class="id"><a href="#functionality">FUNCTIONALITY</a></span>
+                            <ul>
+                                <li>
+                                    <span>2.1</span>
+                                    <span class="id"><a href="#item-block-interactions">ITEM AND BLOCK INTERACTIONS</a></span>
+                                </li>
+                                <li>
+                                    <span>2.2</span>
+                                    <span class="id"><a href="#config">CONFIGURATION</a></span>
+                                </li>
+                                <ul>
+                                    <li>
+                                        <span>2.2.1</span>
+                                        <span class="id"><a href="#server-config">SERVER</a></span>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>3</span>
+                            <span class="id"><a href="#compatibility">COMPATIBILITY</a></span>
+                            <ul>
+                                <li>
+                                    <span>3.1</span>
+                                    <span class="id"><a href="#non-content-compat">NON-CONTENT</a></span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <span class="id"><a href="#history">BRIEF HISTORY</a></span>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <span class="id"><a href="#references">REFERENCES</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="content-descriptor">
                 <img src="../../images/mechanical_botany/mechanical_composter.png" alt="Mechanical Composter">
                 <div class="content-information">
@@ -98,20 +153,22 @@
         </div>
         <div id="functionality">
             <h2>Functionality</h2>
+            <h3 id="item-block-interactions">Item & Block Interactions</h3>
             <p>The Mechanical Composter creates a key item for automating many of the various plants that are able to be automated within Create: Mechanical Botany. This key item is Compost, which can be drained by an Item Drain from the Create mod to create Liquid Compost.</p>
             <p>Compost, in item form, can be crafted into Tree Fertilizer, an item introduced by base Create mod. You can also press it for a chance to create a piece of Bone Meal.</p>
-            <p>Compacting this item into a Block of Compost will allow you to wash it into Mud or haunt it into Dirt. Additionally, you can also spout some Water onto it in order to produce Podzol.</p>
+            <p>Compacting this item into a Block of Compost will allow you to wash it into Mud or press it into Dirt. Additionally, you can also spout some Water onto it in order to produce Podzol.</p>
             <div id="config">
                 <h3>Configuration</h3>
-                <p>The Mechanical Insolator can be affected by 5 configuration options, all being handled through the server, meaning you cannot adjust these settings as a player on a server. However, if you are a server owner, moderator, or are playing in singleplayer, these configs can be changed regardless.</p>
-                <h4>Kinetic Stress Impact | Default: 64 | Range: > 2</h4>
+                <h4 id="server-config">Server</h4>
+                <h5>Kinetic Stress Impact | Default: 64 | Range: > 2</h5>
                 <p>Determines the kinetic stress impact value of the machine. What this value means is that if you are running your machines at 256 RPM and this value is equal to 2, then it will consume 512 stress units.</p>
-                <h4>Processing Time Multiplier | Default: 1 | Range: > 1</h4>
+                <h5>Processing Time Multiplier | Default: 1 | Range: > 1</h5>
                 <p>Determines the multiplier applied to the duration of processing recipes within the Mechanical Insolator. If this value is kept at 1, all processing times will be their default values. However, if increased to, for example, a value of 4, then all processing times will be multiplied by 4. (The Allium processing recipe is 20 seconds by default, so in this example it'd now become 80 seconds instead)</p>
             </div>
         </div>
         <div id="compatibility">
             <h2>Compatibility</h2>
+            <h3 id="non-content-compat">Non-Content Compatibility</h3>
             <p>The Mechanical Insolator has built-in support for various mods, including but may not be limited to:</p>
             <ul class="assisted-list">
                 <li>Ars Elemental</li>
@@ -139,7 +196,7 @@
 
     <script src="javascript.js"></script>
     
-    <div class="references">
+    <div class="references" id="references">
         <h3>Image References</h3>
         <p id="reference#figure-i">Figure I. Mechanical Composter Isometric Render | Blockbench Screenshot | DakotaPrideModding</p>
         <p id="reference#figure-ii">Figure II. Mechanical Composter Recipe | In-Game Screenshot | DakotaPrideModding</p>
